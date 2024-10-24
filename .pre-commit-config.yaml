@@ -29,3 +29,11 @@ repos:
         entry: bandit
         language: python
         types: [python]
+
+  - repo: local
+    hooks:
+      - id: Merge-Conflicts
+        name: Merge Conflicts
+        entry: python check_merge_conflicts.py  # Use your custom script for checking comments
+        language: python
+        types: [python]
