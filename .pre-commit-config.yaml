@@ -30,10 +30,12 @@ repos:
         language: python
         types: [python]
 
-  - repo: local
+repos:
+  - repo: local  # Indicates a local script
     hooks:
-      - id: Merge-Conflicts
-        name: Merge Conflicts
-        entry: python check_merge_conflicts.py  # Use your custom script for checking comments
+      - id: merge-conflict-check
+        name: Merge Conflict Check
+        entry: python check_merge_conflicts.py  # Path to your script
         language: python
-        types: [python]
+        types: [python]  
+
