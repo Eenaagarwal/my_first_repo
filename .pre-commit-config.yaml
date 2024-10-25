@@ -32,8 +32,4 @@ repos:
         language: python
         types: [file]  # This ensures it runs on all file types
 
-      # Uncomment if you want to include commit message validation
-      # - id: commit-message-validator
-      #   name: Commit Message Validator
-      #   entry: python precommit_message_validation.py
-      #   language: python
+
