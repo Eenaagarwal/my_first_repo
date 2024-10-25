@@ -32,4 +32,11 @@ repos:
         language: python
         types: [file]  # This ensures it runs on all file types
 
+  - repo: https://github.com/awslabs/git-secrets
+    rev: 1.3.0 # Use the latest commit or a specific version if desired
+    hooks:
+      - id: git-secrets
+        name: Ensure No Sensitive Information
+        entry: git secrets --scan
+        language: system 
 
