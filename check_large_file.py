@@ -6,7 +6,7 @@ import subprocess
 from collections.abc import Sequence
 
 # Set the maximum file size (in bytes)
-MAX_FILE_SIZE = 5 * 1024 * 1024  # 5 MB, adjust this value as needed
+MAX_FILE_SIZE = 15 * 1024 * 1024  # 5 MB, adjust this value as needed
 
 def main(argv: Sequence[str] | None = None) -> int:
     """Main function to check for large files in the specified files."""

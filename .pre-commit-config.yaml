@@ -47,3 +47,19 @@ repos:
         entry: python check_large_file.py
         language: python
         types: [file]  # This ensures it runs on all file types
+
+# repos:
+#   - repo: local
+#     hooks:
+#       - id: commit-message-validator
+#         name: Commit Message Validator
+#         entry: python precommit_message_validation.py
+#         language: python
+
+
+
+
+    
+
+
+
